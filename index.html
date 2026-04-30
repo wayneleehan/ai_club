@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wayne - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- Background blobs -->
+    <div class="bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hello, I'm <span class="gradient-text">Wayne</span>
+        </h1>
+        <p class="hero-subtitle">
+          Software Engineer & Data Enthusiast
+        </p>
+        <p class="hero-subtitle" style="font-size: 1rem; margin-top: -1rem;">
+          Bachelor of Science in Management Information Systems @ National Chengchi University
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="mailto:contact@wayne.com" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <h2 class="section-title gradient-text">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-panel">
+          <h3 class="skill-category">Programming Languages</h3>
+          <div class="skill-items">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <h3 class="skill-category">Web Development</h3>
+          <div class="skill-items">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <h3 class="skill-category">Data & Machine Learning</h3>
+          <div class="skill-items">
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Financial Modeling</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <h2 class="section-title gradient-text">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-panel">
+          <h3 class="project-name">HMM Stock Backtesting</h3>
+          <p class="project-desc">A financial project utilizing Hidden Markov Models to backtest stock market data and
+            predict market regimes.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Scikit-Learn</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-panel">
+          <h3 class="project-name">Scam Prevention Platform</h3>
+          <p class="project-desc">A web platform designed to detect and prevent scam activities using machine learning
+            models.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-panel">
+          <h3 class="project-name">Smart Pole Interface</h3>
+          <p class="project-desc">A web-based interface for managing and monitoring smart city pole infrastructure.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="year"></span> Wayne. Designed with advanced AI.</p>
+    </footer>
+
+    <!-- AI Chat Box -->
+    <div class="chat-widget">
+      <!-- Chat Window -->
+      <div id="chat-window" class="chat-window glass-panel">
+        <div class="chat-header">
+          <h3>AI Assistant</h3>
+          <button id="close-chat-btn" class="close-btn">&times;</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+          <div class="chat-message ai">
+            <div class="chat-bubble">
+              Hi there! I'm Wayne's AI assistant. How can I help you today?
+            </div>
+          </div>
+        </div>
+        <form id="chat-form" class="chat-input-area">
+          <input type="text" id="chat-input" class="chat-input glass-panel" placeholder="Ask me anything..."
+            autocomplete="off">
+          <button type="submit" class="chat-send-btn btn-primary">Send</button>
+        </form>
+      </div>
+
+      <!-- Toggle Button -->
+      <button id="chat-toggle-btn" class="chat-toggle-btn">
+        <span class="chat-icon">💬</span>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
