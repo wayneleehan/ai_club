@@ -28,7 +28,7 @@ def serve_index():
 @app.route('/api/chat', methods=['POST'])
 def chat():
     if not model:
-        return jsonify({"error": "Gemini API key is not configured on the server."}), 500
+        return jsonify({"error": "Gemini API key is not configured on the server. "}), 500
 
     data = request.json
     if not data or 'message' not in data:
